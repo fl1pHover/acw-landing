@@ -12,6 +12,7 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         sec: "#13285a",
+        dark: "#0f1b24",
       },
       borderRadius: {
         lg: "var(--radius)",

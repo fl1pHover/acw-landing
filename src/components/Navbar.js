@@ -1,15 +1,16 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Navbar() {
   return (
     <div
-      className="fixed top-0 left-0 z-50 w-full text-sm font-bold bg-white "
+      className="fixed top-0 left-0 z-50 w-full px-4 text-sm font-bold bg-white lg:px-6"
       style={{
         boxShadow: "0 0 30px rgba(0,0,0,.1)",
       }}
     >
-      <div className="grid items-center grid-cols-3 py-4 mx-auto max-w-7xl">
-        <div className="flex items-center gap-10">
+      <div className="grid items-center grid-cols-2 py-4 mx-auto lg:grid-cols-3 max-w-7xl ">
+        <div className="items-center hidden gap-10 lg:flex">
           <a href="/" className="transition text-slate-800 hover:text-red-500">
             Нүүр
           </a>
@@ -33,13 +34,15 @@ export default function Navbar() {
           </a>
         </div>
 
-        <div className="flex justify-center">
+        <a href="/" className="flex justify-start lg:justify-center">
           <img
+            width={200}
+            height={100}
             src="https://acwtrans.mn/wp-content/uploads/2020/07/logo-tsagaan-border-2.png"
-            alt=""
+            alt="logo"
             className="max-w-64"
           />
-        </div>
+        </a>
         <div className="flex justify-end gap-2 ">
           <button className="flex gap-1 p-2 transition rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-600">
             <svg
