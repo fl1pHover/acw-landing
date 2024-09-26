@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
     <>
       <nav className="flex flex-col">
-        <div className="mx-5 mb-2 text-sm text-white bg-sec-600 rounded-b-xl">
+        <div className="mx-5 mb-2 text-sm text-white bg-sec rounded-b-xl">
           <ul className="flex mx-auto max-w-7xl">
             <li className="border-x border-slate-600">
               <div className="flex items-center gap-2 p-2 px-4 transition hover:text-sky-400 hover:-translate-x-1">
@@ -83,7 +83,7 @@ export default function Navbar() {
           </a>
           <div className="flex justify-end gap-2 mr-4">
             <button className="flex items-center gap-1 p-2 transition border-2 rounded-xl border-slate-300 bg-slate-100 hover:bg-slate-200 text-slate-600">
-              <IconGlobe className={"fill-slate-600 w-5 h-5"} />
+              <IconGlobe className={"fill-sec w-5 h-5"} />
               EN
             </button>
             {/* <a
@@ -124,7 +124,7 @@ export default function Navbar() {
                   />
                   <IconCall
                     className={
-                      "w-5 h-5 absolute top-[50%] -translate-y-[50%] -left-[100%] group-hover:left-0 duration-300 transition-all fill-sec-600"
+                      "w-5 h-5 absolute top-[50%] -translate-y-[50%] -left-[100%] group-hover:left-0 duration-300 transition-all fill-sec"
                     }
                   />
                 </div>

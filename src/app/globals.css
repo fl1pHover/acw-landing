@@ -70,10 +70,6 @@ body {
     left: 0px;
     z-index: -1;
     background: rgba(255, 255, 255, 1);
-    backdrop-filter: blur(20px);
-    border-radius: 20px;
-    -webkit-backdrop-filter: blur(20px);
-    box-shadow: -12px 12px 64px 0 rgba(0, 0, 0, 0.12);
     clip-path: polygon(
       calc(100% - 90.142px) 5.85786px,
       calc(100% - 90.142px) 5.85786px,

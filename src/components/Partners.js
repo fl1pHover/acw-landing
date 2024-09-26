@@ -54,7 +54,12 @@ const servies = [
 
 const Partners = () => {
   return (
-    <section className="flex items-center justify-between mx-20 max-w-7xl">
+    <section className="relative flex items-center justify-between mx-20 max-w-7xl">
+      <img
+        className="absolute top-0 left-[50%] -translate-x-[50%]"
+        src="https://themexriver.com/wp/logistify/wp-content/uploads/2024/09/bg-shape.svg"
+        alt="bg-shape"
+      ></img>
       {/* <img src="" alt="" />
       <img
         decoding="async"

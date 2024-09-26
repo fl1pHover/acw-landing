@@ -10,14 +10,48 @@ export default function Home() {
   return (
     <>
       <div className="h-[80vh] m-5 mt-2 overflow-hidden rounded-3xl  relative">
-        <img
+        <svg
+          className="absolute bottom-0 left-0 z-20"
+          width="210"
+          height="140"
+          viewBox="0 0 210 140"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect x="70" y="70" width="70" height="70" fill="#ffffff33"></rect>
+          <path
+            d="M0 70H70V140H20C8.9543 140 0 131.046 0 120V70Z"
+            fill="#22222252"
+          ></path>
+          <rect x="140" y="70" width="70" height="70" fill="#ffffff0f"></rect>
+          <rect x="70" width="70" height="70" fill="#ffffff1a"></rect>
+        </svg>
+        {/* <img
           src="https://smekwt.net/wp-content/uploads/2023/10/logistic.jpg"
-          alt="image"
+          'alt="image"
           className="object-cover opacity-100 size-full"
-        />
-        <div className="absolute top-0 left-0 z-10 flex items-center justify-center size-full bg-gradient-to-r from-sec-600 to-transparent">
-          <div className="max-w-4xl">
-            <span className="p-1 px-2 font-semibold rounded bg-sky-500">
+        /> */}
+        <video
+          className="object-cover size-full"
+          autoPlay={true}
+          loop={true}
+          muted={true}
+          crossOrigin="anonymous"
+        >
+          <source src="https://themexriver.com/wp/logistify/logistify-hero-video.mp4" />
+        </video>
+        {/* <iframe
+          src="https://www.youtube.com/embed/KEFt2quibkg?si=KoPBelE3Jk0-gy0k&autoplay=1&controls=0&loop=1"
+          title="YouTube video player"
+          frameborder="0"
+          className="object-cover w-full h-full"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe> */}
+        <video src="https://www.youtube.com/watch?v=KEFt2quibkg"></video>
+        <div className="absolute top-0 left-0 z-10 flex items-center justify-center size-full bg-gradient-to-r to-70% from-sec to-transparent">
+          <div className="max-w-4xl mx-6">
+            <span className="p-1 px-2 font-bold text-white bg-red-500 rounded">
               Acw Trans - International Freight Forwarding Company
             </span>
             <h1 className="my-4 text-5xl font-bold text-white">
@@ -50,7 +84,7 @@ export default function Home() {
                 >
                   <path d="M0 0 C10.02766385 0 11.78016344 0.0022601 18.375 6.25 C21.21594016 8.14396011 23.33275869 8.80093012 26.765625 8.671875 C30.69416391 7.4905661 33.34474692 4.58563598 36.21484375 1.75 C39 0 39 0 48 0 C48 14.52 48 29.04 48 44 C39.48205443 44 37.45308287 43.27134166 31.625 37.75 C28.78104578 35.85403052 26.66245567 35.19943986 23.2265625 35.328125 C19.34599355 36.4991037 16.77099216 39.40514781 13.98046875 42.25 C11 44 11 44 0 44 C0 29.48 0 14.96 0 0 Z "></path>
                 </svg>
-                <div className="border-4 h-full  border-white aspect-[1/1] rounded-2xl relative bg-sec-600 group-hover:bg-white transition-all group-hover:border-red-500 grid place-items-center">
+                <div className="border-4 h-full  border-white aspect-[1/1] rounded-2xl relative bg-sec group-hover:bg-white transition-all group-hover:border-red-500 grid place-items-center">
                   <div className="relative overflow-hidden">
                     <IconMap
                       className={
