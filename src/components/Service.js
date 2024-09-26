@@ -9,7 +9,6 @@ import {
 import { IconArrow } from "./icons/page";
 import Image from "next/image";
 import Link from "next/link";
-import emblaCarouselAutoplay from "embla-carousel-autoplay";
 
 const servies = [
   {
@@ -42,8 +41,8 @@ export default function Service() {
   return (
     <div className="relative px-4 mx-auto my-20 overflow-hidden max-w-7xl md:px-6">
       <div className="relative flex justify-center">
-        <h1 className="text-4xl font-bold">Үйлчилгээ</h1>
-        <h1 className="text-[180px] font-bold absolute -top-10 left-[50%] -translate-x-[50%]   text-white drop-shadow-[0_0px_1px_rgba(0,0,0,0.3)]">
+        <h1 className="text-4xl font-bold text-sec-600">Үйлчилгээ</h1>
+        <h1 className="text-[180px] font-bold absolute -top-10 left-[50%] -translate-x-[50%]   text-light drop-shadow-[0_0px_1px_rgba(0,0,0,0.3)]">
           Үйлчилгээ
         </h1>
       </div>
@@ -71,7 +70,7 @@ export default function Service() {
                 <Link href="/" className="relative">
                   <div className="z-10 flex items-end p-6 x size-full">
                     <div className="w-full px-6 py-4 overflow-hidden text-lg font-semibold text-white rounded-lg bg-white/20 backdrop-blur-md">
-                      <h1 className="flex justify-between">
+                      <h1 className="flex justify-between text-white">
                         <span>{el.title}</span>
                         <span className="text-2xl font-bold duration-300 -rotate-45 group-hover:rotate-0">
                           <IconArrow className="w-5 h-5 fill-white" />

@@ -30,6 +30,9 @@ body {
 } */
 
 @layer base {
+  body {
+    @apply bg-light text-sec-600;
+  }
   .font-outline {
     -webkit-text-stroke: 1px black;
   }
@@ -51,9 +54,88 @@ body {
   h5,
   h6 {
     font-family: "Roboto", sans-serif;
+    @apply text-sec-600;
   }
 
   .text-w-border {
     -webkit-text-stroke: 2px white; /* width and color */
+  }
+
+  .acw-form::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    background: rgba(255, 255, 255, 1);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: -12px 12px 64px 0 rgba(0, 0, 0, 0.12);
+    clip-path: polygon(
+      calc(100% - 90.142px) 5.85786px,
+      calc(100% - 90.142px) 5.85786px,
+      calc(100% - 91.306261px) 4.78241496px,
+      calc(100% - 92.543968px) 3.80836608px,
+      calc(100% - 93.848407px) 2.93849472px,
+      calc(100% - 95.212864px) 2.17558224px,
+      calc(100% - 96.630625px) 1.52241px,
+      calc(100% - 98.094976px) 0.98175936px,
+      calc(100% - 99.599203px) 0.55641168px,
+      calc(100% - 101.136592px) 0.24914832px,
+      calc(100% - 102.700429px) 0.06275064px,
+      calc(100% - 104.284px) 0px,
+      20px 0px,
+      20px 0px,
+      16.75589733px 0.2617661px,
+      13.67845504px 1.0196128px,
+      10.80885071px 2.2323627px,
+      8.18826192px 3.8588384px,
+      5.85786625px 5.8578625px,
+      3.85884128px 8.1882576px,
+      2.23236459px 10.8088463px,
+      1.01961376px 13.6784512px,
+      0.26176637px 16.7558949px,
+      0px 20px,
+      0px calc(100% - 20px),
+      0px calc(100% - 20px),
+      0.26176637px calc(100% - 16.755822px),
+      1.01961376px calc(100% - 13.678336px),
+      2.23236459px calc(100% - 10.808714px),
+      3.85884128px calc(100% - 8.188128px),
+      5.85786625px calc(100% - 5.85775px),
+      8.18826192px calc(100% - 3.858752px),
+      10.80885071px calc(100% - 2.232306px),
+      13.67845504px calc(100% - 1.019584px),
+      16.75589733px calc(100% - 0.261758px),
+      20px calc(100% - 0px),
+      calc(100% - 20px) calc(100% - 0px),
+      calc(100% - 20px) calc(100% - 0px),
+      calc(100% - 16.755822px) calc(100% - 0.261758px),
+      calc(100% - 13.678336px) calc(100% - 1.019584px),
+      calc(100% - 10.808714px) calc(100% - 2.232306px),
+      calc(100% - 8.188128px) calc(100% - 3.858752px),
+      calc(100% - 5.85775px) calc(100% - 5.85775px),
+      calc(100% - 3.858752px) calc(100% - 8.188128px),
+      calc(100% - 2.232306px) calc(100% - 10.808714px),
+      calc(100% - 1.019584px) calc(100% - 13.678336px),
+      calc(100% - 0.261758px) calc(100% - 16.755822px),
+      calc(100% - 0px) calc(100% - 20px),
+      calc(100% - 0px) 104.284px,
+      calc(100% - 0px) 104.284px,
+      calc(100% - 0.062747px) 102.7004021px,
+      calc(100% - 0.249136px) 101.1365448px,
+      calc(100% - 0.556389px) 99.5991427px,
+      calc(100% - 0.981728px) 98.0949104px,
+      calc(100% - 1.522375px) 96.6305625px,
+      calc(100% - 2.175552px) 95.2128136px,
+      calc(100% - 2.938481px) 93.8483783px,
+      calc(100% - 3.808384px) 92.5439712px,
+      calc(100% - 4.782483px) 91.3063069px,
+      calc(100% - 5.858px) 90.1421px,
+      calc(100% - 90.142px) 5.85786px
+    );
   }
 }

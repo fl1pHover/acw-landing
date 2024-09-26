@@ -6,9 +6,14 @@ import Mission from "./OurMission";
 export default function About() {
   return (
     <>
-      <div className="relative w-full aspect-[3/1] rounded-b-3xl overflow-hidden">
-        <div className="absolute top-0 left-0 z-10 flex items-center justify-center size-full bg-gradient-to-r from-blue-900/90 via-black/70 to-red-800/90">
-          <h1 className="relative z-20 text-5xl font-bold text-white">
+      <div className="m-5 relative  aspect-[3/1] rounded-3xl overflow-hidden">
+        <div
+          className="absolute top-0 left-0 z-10 flex items-center justify-center size-full"
+          style={{
+            background: "rgba(246, 36, 89, 0.3)",
+          }}
+        >
+          <h1 className="relative z-20 text-6xl font-extrabold text-white">
             Бидний тухай
           </h1>
         </div>
